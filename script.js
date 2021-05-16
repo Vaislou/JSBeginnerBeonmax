@@ -1,26 +1,25 @@
 /*jslint node: true */
 'use strict';
 
-var leftBorderWidth = 1;
-let second = 2;
-const pi = 3.14;
-let myName = 'Alex';
+let money = prompt('Ваш бюджет на месяц?', 720);
+let time = prompt('Введите дату в формате YYYY-MM-DD', '2021-05-16');
 
+let mounthPaysFirst = prompt('Введите обязательную статью расходов в этом месяце', 'Аренда квартиры');
+let payItemFirst = prompt('Во сколько обойдется?', 320);
 
-let persone = {
-    name : 'John',
-    age : 25,
-    isMarried : false
+let mounthPaysSecond = prompt('Введите обязательную статью расходов в этом месяце', 'Аренда квартиры');
+let payItemSecond = prompt('Во сколько обойдется?', 320);
+
+let appData = {
+    budget : money,
+    timeData : time,
+    expenses : {
+        mounthPaysFirst : payItemFirst,
+        mounthPaysSecond : payItemSecond
+    },
+    optionalExpenses : {},
+    income : [],
+    savings : false
 };
 
-console.log(persone.name);
-
-let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
-
-console.log(arr[2]);
-
-// alert('Hello');
-
-// let answer = prompt('Есть ли Вам 18?', 'Да');
-// console.log(answer);
-console.log(typeof(NaN));
+alert(appData.budget / 30);
