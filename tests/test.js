@@ -12,27 +12,127 @@
 //     return a + b;
 // }
 
-let calc = (a, b) => a + b;
+// let calc = (a, b) => a + b;
 
-console.log(calc(3, 4));
-console.log(calc(10, 20));
+// console.log(calc(3, 4));
+// console.log(calc(10, 20));
 
-function  retVar() {
-    let num = 50;
-    return num;
-}
+// function  retVar() {
+//     let num = 50;
+//     return num;
+// }
 
-let anotherNum = retVar();
-console.log(anotherNum);
+// let anotherNum = retVar();
+// console.log(anotherNum);
 
-let str = 'test';
-console.log(str.length);
+// let str = 'test';
+// console.log(str.length);
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
 
-let twelve = '12.2px';
+// let twelve = '12.2px';
 
 // console.log(Math.round(twelve));
-console.log(parseInt(twelve));
-console.log(parseFloat(twelve));
+// console.log(parseInt(twelve));
+// console.log(parseFloat(twelve));
+
+// function first() {
+//     setTimeout(function() {
+//         console.log(1);
+//     }, 500);
+// }
+
+// function second() {
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS(lang, callback) {
+//     console.log(`Я учу ${lang}`);
+//     callback();
+// }
+
+// function done() {
+//     console.log('Я прошел 3 урок');
+// }
+
+// learnJS('JavaScript', done);
+
+// let options = {
+//     width : 1024,
+//     height : 1024,
+//     name : 'test'
+// };
+
+// console.log(options.name);
+// options.bool = false;
+// options.colors = {
+//     border : 'black',
+//     bg : 'red'
+// };
+
+// delete options.bool;
+
+// console.log(options);
+
+// for (let key in options) {
+//     console.log(`Свойства ${key} имеет значение ${options[key]}`);
+// }
+
+// console.log(Object.keys(options).length);
+
+// let arr = ['first', 2, 3, 'four', 5];
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+// arr.forEach(function (item, i, mass) {
+//     console.log(`Номер ${i}: ${item} (массив: ${mass})`);
+// });
+
+// arr.pop(); // delete last element from array
+// arr.push('5'); // add to the end of array sting '5'
+// arr.shift(); // delete first element from array
+// arr.unshift('1'); // add to the start of array string '1'
+
+// console.log(arr);
+
+// let mass = [1, 3, 4, 6, 7];
+
+// for (let key of mass) {
+//     console.log(key);
+// }
+
+// let ans = prompt('', '');
+// let arr;
+
+// arr = ans.split(',');
+// console.log(arr);
+
+// let arr = ['Консоль','Телевизор','Телефон'];
+// let str = arr.join(', ');
+// console.log(str);
+
+// let arr = [1,15,4];
+// let str = arr.sort(function sortArr(a,b) {
+//     return a - b;
+// });
+// console.log(str);
+
+// let soldier = {
+//     health : 400,
+//     armor : 100
+// };
+
+// let john = {
+//     health : 100
+// };
+
+// john.__proto__ = soldier;
+
+// console.log(john);
+// console.log(john.armor);
